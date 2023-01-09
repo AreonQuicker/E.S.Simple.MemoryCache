@@ -73,6 +73,7 @@ namespace E.S.Simple.MemoryCache.Core
         public virtual void Remove(string key)
         {
             if (!key.StartsWith(keyPrefix)) key = keyPrefix + key;
+            
             Cache.Remove(key);
         }
 
